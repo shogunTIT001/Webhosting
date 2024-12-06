@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #1A1A19;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    left: 0; 
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.Logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 15px;
+    transition: background-color 0.4s ease;
+}
+
+.Link a:hover {
+    background-color: rgb(168, 168, 168);  
+    color: rgb(0, 0, 0); 
+    border-radius: 5px;  
+}
+
+.welcome {
+    background-image: url("https://cdn.pixabay.com/photo/2020/10/17/14/25/river-5662293_1280.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 95vh;
+    position: relative;
+    filter: blur(3px);
+    animation: BlurMotion 1.7s forwards;
+}
+
+.contener {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    opacity: 0;
+    animation: fadein 3s forwards;
+}
+
+.contener h1{
+    font-size: 50px;
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes BlurMotion {
+    0%{
+        filter: blur(3px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+.Contener-div {
+    padding: 20px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+.About-me {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.About-me h3 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+.conten {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.con {
+    background-color: #f3f3f3;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 32%; 
+    padding: 20px;
+    transition: transform 0.3s ease;
+}
+
+.con img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.con h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.con p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+.con:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (max-width: 1040px) {
+    .conten{
+        flex-direction: column;
+        justify-content: none;
+        margin: 0 10%;
+    }
+    .con{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 700px) {
+    .contener h1{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+}

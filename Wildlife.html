@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section-title {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .animals, .plants {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .animal, .plant {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .animal:hover, .plant:hover {
+            transform: scale(1.05);
+        }
+        .animal img, .plant img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .animal h3, .plant h3 {
+            font-size: 20px;
+            color: #333;
+        }
+        .animal p, .plant p {
+            font-size: 16px;
+            color: #666;
+        }
+    </style>
+    <nav>
+        <div class="Logo">
+        <a href="index.html">NaturalPark</a>
+      </div>
+      <div class="Link">
+          <a href="index.html">หน้าแรก</a>
+          <a href="index.html#About">เกี่ยวกับเรา</a>
+          <a href="activity.html">กิจกรรม</a>
+          <a href="Wildlife.html">สัตว์และพืช</a>
+          <a href="contact.html">ติดต่อเรา</a>
+      </div>
+    </nav>
+
+    <div class="content">
+        <h2 class="section-title">สัตว์ในอุทยานธรรมชาติ</h2>
+        <div class="animals">
+            <!-- ข้อมูลสัตว์ -->
+            <div class="animal">
+                <img src="https://via.placeholder.com/300x200" alt="เสือ">
+                <h3>เสือโคร่ง</h3>
+                <p>เสือโคร่งเป็นสัตว์ที่หายากและเป็นราชาแห่งป่าในอุทยานแห่งนี้ มีขนาดใหญ่และมีทักษะการล่าสัตว์ที่ยอดเยี่ยม</p>
+            </div>
+            <div class="animal">
+                <img src="https://via.placeholder.com/300x200" alt="ช้าง">
+                <h3>ช้างป่า</h3>
+                <p>ช้างป่ามักพบได้ในป่าทึบของอุทยาน เป็นสัตว์ที่มีความสำคัญต่อระบบนิเวศและสามารถอยู่ร่วมกับสัตว์ชนิดอื่นๆ ได้ดี</p>
+            </div>
+            <div class="animal">
+                <img src="https://via.placeholder.com/300x200" alt="นกกระเรียน">
+                <h3>นกกระเรียน</h3>
+                <p>นกกระเรียนมีถิ่นอาศัยในแหล่งน้ำภายในอุทยาน สามารถพบเห็นได้ในช่วงฤดูฝน</p>
+            </div>
+        </div>
+    
+        <h2 class="section-title">พืชในอุทยานธรรมชาติ</h2>
+        <div class="plants">
+            <!-- ข้อมูลพืช -->
+            <div class="plant">
+                <img src="https://via.placeholder.com/300x200" alt="ต้นไม้ใหญ่">
+                <h3>ต้นไม้ใหญ่</h3>
+                <p>ต้นไม้ใหญ่ที่มีอายุหลายสิบปีเป็นแหล่งอาศัยของสัตว์หลายชนิดและเป็นต้นกำเนิดของป่าไม้ในอุทยาน</p>
+            </div>
+            <div class="plant">
+                <img src="https://via.placeholder.com/300x200" alt="เฟิร์น">
+                <h3>เฟิร์นป่า</h3>
+                <p>เฟิร์นเป็นพืชที่เติบโตในพื้นที่ชื้นและพบได้ในหลายบริเวณของอุทยาน</p>
+            </div>
+            <div class="plant">
+                <img src="https://via.placeholder.com/300x200" alt="ดอกไม้ป่า">
+                <h3>ดอกไม้ป่า</h3>
+                <p>ดอกไม้ป่าหลากหลายพันธุ์บานสะพรั่งในช่วงฤดูฝน เพิ่มความสวยงามให้กับอุทยาน</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
