@@ -12,9 +12,9 @@ body{
     margin: 0 auto;
     width: 720px;
     height: 100%;
-    background-color: #00000027;
+    background-color: #ffffff;
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.352);
 }
 
 .info-contact > h2 {
